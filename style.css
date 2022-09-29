@@ -1,0 +1,195 @@
+body{
+    font-family: "Inter", sans-serif;
+    background: #F3F5FC;
+}
+
+main{
+    display: flex;
+}
+
+.logo{
+    position: absolute;
+    display: inline-block;
+    width: 2.5%;
+    left: 5%;
+    top: 5%;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.logo:hover{
+    transform: scale(0.8);
+}
+
+footer{
+    background-color: #E3E5EC;
+    text-align: center;
+    padding: .4em 0;
+    font-size: 12px;
+    display: block;
+    display: none;
+}
+
+/*-----------------------------INICIA PAGINA PRINCIPAL------------------------------*/
+
+.pagina-principal{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    margin-top: 1.6em;
+    font-size: 55px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #012756;
+}
+
+.btn-iniciar{ 
+    position: absolute;    
+    top: 38%;
+    left: 35%;
+    width: 30%;
+    font-size: 30px;
+    padding: 1.5em 0;
+    border-radius: 24px;
+    color: #FFFFFF;
+    background: #0A3871;
+    border: none;
+    cursor: pointer;
+    transition: 0.6s all;
+}
+
+.btn-iniciar:hover{
+    background: #0A3860;
+    color: #F0F0F0;
+    top: 39%;
+    left: 36%;
+    width: 28%;
+    font-size: 35px;
+    padding: 1em 0;
+}
+
+.btn-agregar{
+    position: absolute;    
+    top: 61%;
+    left: 37%;
+    width: 26%;
+    font-size: 22px;
+    padding: 1em 0;
+    background: #D8DFE8;
+    color: #0A3871;
+    border-style: solid;
+    border-radius: 24px;
+    border-color: #0A3871;
+    cursor: pointer;
+    transition: 0.6s all; 
+}
+
+.btn-agregar:hover{
+    background: #D8DFE1;
+    color: #0A3860;
+    border-color: #0A3860;
+    left: 38%;
+    width: 24%;
+    font-size: 23px;
+    padding: .8em 0;
+}
+
+/*----------------------------TERMINA PAGINA PRINCIPAL------------------------------*/
+/*-------------------------INICIA PAGINA AGREGAR PALABRA----------------------------*/
+
+.pagina-agregar{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 110px;
+    display: none;
+}
+
+.input-texto {
+    text-transform: uppercase;
+    width: 90%;
+    border: none;
+    background: none;
+    font-size: 3em;
+    padding: 5px 0;
+    top: 20%;
+    left: 10%;
+    color: #0A3871;
+}
+
+::placeholder { 
+    text-transform: initial;
+}
+
+.input-texto:focus{
+    border: none;
+    outline: none;
+}
+
+.aviso{
+    font-size: 13px;
+    text-align: left;
+    margin: 1em 0;
+}
+
+.guardar{    
+    width: 49%;
+    margin-right: 1.7%;
+    font-size: 18px;
+    padding: 1em 0;
+    border-radius: 24px;
+    color: #FFFFFF;
+    background: #0A3871;
+    border: none;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.guardar:hover{
+    transform: scale(1.07);
+}
+
+.cancelar{
+    border: solid 2px;
+    width: calc(49% - 2px);
+    font-size: 18px;
+    padding: calc(1em - 2px) 0;
+    background: #D8DFE8;
+    color: #0A3871;
+    border-radius: 24px;
+    border-color: #0A3871;
+    cursor: pointer;
+    transition: 0.6s;    
+}
+
+.cancelar:hover{
+    transform: scale(1.07);
+}
+
+/*-------------------------TERMINA PAGINA AGREGAR PALABRA---------------------------*/
+/*------------------------------INICIA PAGINA JUEGO---------------------------------*/
+
+.pagina-juego{
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.area-dibujo{
+   margin-top: 40px;
+}
+
+.area-guiones{
+    margin-top: 20px;
+}
+.area-letras{
+    margin-top: 20px;
+}
+
+.area-fin{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+}

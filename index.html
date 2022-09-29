@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <title>Juego del ahorcado</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="Imagenes/letra-d.png" alt="logo">
+        </header>
+
+        <main>
+            <section class="pagina-principal">
+                <h1 class="titulo-principal">El ahorcado</h1>
+                <button class="btn-iniciar">Iniciar juego</button>
+                <button class="btn-agregar">Agregar nueva palabra</button>
+            </section>
+
+            <section class="pagina-agregar">
+                <textarea maxlength="20" class="input-texto" required placeholder="Ingrese una palabra" rows="8" onkeypress="return (event.charCode >= 65 && event.charCode <= 122 || event.charCode >= 164 && event.charCode <= 165)"></textarea>
+                <legend class="aviso"><img src="Imagenes/Vector.png" alt="Aviso"> Máximo de 20 letras</legend>     
+                <button class = guardar> Guardar y jugar </button>
+                <button class = cancelar> Cancelar </button>
+            </section>
+
+            <section class="pagina-juego">
+                <div class="area-dibujo">
+                    <canvas id="dibujo" width="500" height="320"></canvas>
+                </div>
+
+                <div class="area-guiones">
+                    <canvas id="renglones" width="800" height="110"></canvas>
+                </div>
+
+                <div class="area-letras">
+                    <canvas id="letras-usadas" width="900" height="200"></canvas>
+                </div>
+
+                <div class="area-fin">
+                    <canvas id="juego-terminado" width="500" height="300"></canvas>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+           <legend class="desarrollador"><img src="Imagenes/Vector.png">  Desarrollado por David Vargas</legend>
+        </footer>
+
+        <script src="script.js"></script>
+        <script src="canvas.js"></script>
+    </body>
+</html>
